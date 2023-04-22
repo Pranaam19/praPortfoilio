@@ -1,9 +1,7 @@
 import { defineConfig } from 'astro/config';
-
-import netlify from '@astrojs/netlify/edge-functions';
-
-// https://astro.build/config
+import vercelEdge from '@astrojs/vercel/edge';
+ 
 export default defineConfig({
-  output: "server",
-  adapter: netlify()
+  output: 'server',
+  adapter: vercelEdge(),
 });
